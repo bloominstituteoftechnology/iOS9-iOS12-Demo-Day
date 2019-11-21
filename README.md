@@ -4,13 +4,15 @@
 
 1. Fork and clone the repository
 2. **Add your presentation content**
-    1. Add you slide deck (4 required slides in Keynote)
-    2. Add your links
-    3. Answer all the questions (Replace placeholders with your answers)
-    4. Video demo (2 minutes max), share YouTube video link
-    5. Add screenshots and an overview to your GitHub Code
-    The video demo is for sharing your work on your portfolio, but it is also a fallback if you have a technical issue during demo time.
-3. Create a pull request (PR) and **tag your TL and Instructor**
+    1. Slide deck (4 required slides)
+    2. Links
+    3. Answer all questions 
+    4. YouTube demo video (1-2 min max)
+3. Polish your Github Code repository
+    1. Add screenshots and an overview to your GitHub Code Repository
+    2. You should make that repository the "Public Portfolio" for your project
+    3. Look at [John Sundell's Splash project](https://github.com/JohnSundell/Splash) for inspiration (code, images, GIFs)
+4. Create a pull request (PR) and **tag your TL and Instructor**
 
 ## Links
 
