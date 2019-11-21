@@ -3,16 +3,14 @@
 ## Requirements
 
 1. Fork and clone the repository
-2. Create a pull request (PR) and **tag your TL and Instructor**
-
-**Add Your Presentation Content**
-
-1. Add you slide deck (4 required slides in Keynote)
-2. Add your links
-3. Answer all the questions (Replace placeholders with your answers)
-4. Video demo (2 minutes max), share YouTube video link
-5. Add screenshots and an overview to your GitHub Code
-The video demo is for sharing your work on your portfolio, but it is also a fallback if you have a technical issue during demo time.
+2. **Add your presentation content**
+    1. Add you slide deck (4 required slides in Keynote)
+    2. Add your links
+    3. Answer all the questions (Replace placeholders with your answers)
+    4. Video demo (2 minutes max), share YouTube video link
+    5. Add screenshots and an overview to your GitHub Code
+    The video demo is for sharing your work on your portfolio, but it is also a fallback if you have a technical issue during demo time.
+3. Create a pull request (PR) and **tag your TL and Instructor**
 
 ## Links
 
