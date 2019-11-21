@@ -7,20 +7,20 @@
 
 **Add Your Presentation Content**
 
-1. Slide deck (4 required slides in Keynote)
+1. Add you slide deck (4 required slides in Keynote)
 2. Add your links
 3. Answer all the questions (Replace placeholders with your answers)
 4. Video demo (2 minutes max), share YouTube video link
 5. Add screenshots and an overview to your GitHub Code
 The video demo is for sharing your work on your portfolio, but it is also a fallback if you have a technical issue during demo time.
 
-## Links (Add your links)
+## Links
 
 * Github Code: `<insert Github repository link here>`
 * Github Proposal: `<insert Proposal Pull Request here>`
 * Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup: `<insert beta signup link here>`
-* YouTube demo video (Optional): `<insert video url here>`
+* Test Flight Signup (Recommended): `<insert beta signup link here>`
+* YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
@@ -82,7 +82,7 @@ The video demo is for sharing your work on your portfolio, but it is also a fall
 
 We have ~12 teams presenting today — please practice your presentation with a timer (as a team), and make sure you fit within the time limit.
 
-Plan on having one person present the slides and live demo. Please practice your presentation in front of a mirror or with your team 2-5 times. Have the app running and visible in QuickTime so you can quickly transition between slides and live demo.
+Plan on having one person present the slides and live demo. Please practice your presentation in front of a mirror or with your team 2-5 times. Have the app running and visible (Simulator or QuickTime) so you can quickly transition between slides and live demo.
 
 * App Name / Team Slide (30 seconds)
 * Elevator Pitch Slide (30 seconds)
