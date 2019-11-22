@@ -38,6 +38,7 @@
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
+```
     /// Function to set up timed notifications for every medication scheduled in the medications array
     /// - Parameter medicationController: The medication controller to be passed in
     func setupTimeNotifications(medicationController: MedicationController) {
@@ -56,8 +57,9 @@
             }
         }
     }
+ ```
     
-    This code sets up notifications for all medications in the medications array. Therefore allowing the user to get a notification when it is time to take their medications.
+   This code sets up notifications for all medications in the medications array. Therefore allowing the user to get a notification when it is time to take their medications.
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
