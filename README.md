@@ -24,7 +24,7 @@
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![alt text](https://raw.githubusercontent.com/chadarutherford/iOS9-iOS12-Demo-Day/master/Screenshot.png)
 
 ## Questions (Answer indented below)
 
