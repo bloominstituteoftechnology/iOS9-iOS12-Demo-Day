@@ -16,41 +16,41 @@
 
 ## Links
 
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* Github Code: `<https://github.com/tobikuyo/PressPlay>`
+* Github Proposal: `<https://github.com/tobikuyo/ios-build-sprint-project-proposal>`
+* Trello/Github Project Kanban: `<https://trello.com/b/a3WDFkBx/press-play>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+`</Users/tobikuyo/Downloads/Screenshot 2019-11-22 at 18.42.03.png>`
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+`<My favourite feature to implement was the 'Episodes left to catch up' string, because it recognises when a presses the 'Seen' button and it updates the number of episodes left accordingly.>`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    `<My number 1 obstacle>`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `</Users/tobikuyo/Documents/iosDevelopment/lambda/Build Week/PressPlay/Chunk of code.png>`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    `<PressPlay is an app that allows tv series lovers to keep track of how many episodes they have left till the new season of that show starts. For those who have allowed life to get in the way of them and their favourite shows, PressPlay ensures that they are ready to watch the new season of that show with the rest of the world. So what are you waiting for? PressPlay!>`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `<My number 1 feature is the 'Episodes Left to catch up' text that updates with each episode a user has watched>`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    `<To create user profiles, where users can save their favourite episodes and interact with others in their network regarding each episode on a show>`
 
 ## Required Slides (Add your Keynote to your PR)
 
