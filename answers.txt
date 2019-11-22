@@ -1,0 +1,57 @@
+1. What was your favorite feature to implement? Why?
+    
+   My favorite feature is onboard screen, where it gives a quick run down of the app I think it makes it look really good and
+   very professional- Tyler   
+
+
+   
+
+
+
+2. What was your #1 obstacle or bug that you fixed? How did you fix it?
+     
+    The biggest obstacle faced in this project would be getting the notifications to fire. -Tyler
+
+
+
+
+
+3. Are you proud of a code file? Why?
+
+   Yes all the files are cleanly written and look very nice and the all the app files are well organized -Tyler
+
+
+
+
+
+
+4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
+    
+   Yes the elevator pitch we have is fast and to the point and clear to understand -Tyler 
+
+
+
+
+
+5. What is your #1 feature?
+
+Our number 1 feature to me is the fact that it will let you know when you are starting to run low on medication that way you don't for get to go the doctor/pharmacy to refill and pick up -Tyler 
+
+
+
+
+
+
+
+6. What are you future goals?
+
+The only future goal I can think of at this time would be having the user add a custom sound as the notifications for when it is time to take there medication -Tyler 
+
+
+
+LINKS- 
+
+GitHub link https://github.com/chadarutherford/PillReminder
+
+Trello https://trello.com/b/GW38Z2WO/pill-reminder
+
