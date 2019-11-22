@@ -16,41 +16,90 @@
 
 ## Links
 
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* Github Code: `<https://github.com/Patrickm79/Duplicate-No-More>`
+* Github Proposal: `<https://github.com/Patrickm79/ios-build-sprint-project-proposal>`
+* Trello/Github Project Kanban: `<https://github.com/Patrickm79/Duplicate-No-More/projects/1>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![](https://i.imgur.com/EgnXLpl.png)
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    `<My favorite feature was implimenting the modal segues to select two images from a collection view and put them into a seperate view controller>`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`<My app wouldn't select the cells in the duplicate detector view controller even though I had all the code right, turns out by initializing the view controller as a property it was trying to call my functions to get the info from the cell before the collection view was even displayed. Fixed it by using a delegate to handle transfering the photos data.>`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `<
+        
+        guard let photo1 = imageOnePhoto else { return }
+        guard let photo2 = imageTwoPhoto else { return }
+        
+        let imageOneIndex = imageOneIndexPath
+        let imageTwoIndex = imageTwoIndexPath
+        
+        let photoOneString = photoComparisonController.convertPhoto(photo1)
+        let photoTwoString = photoComparisonController.convertPhoto(photo2)
+        
+        check1 = photoOneString
+        check2 = photoTwoString
+        
+        guard let result = photoComparisonController.hammingDistance(photoOne: check1, photoTwo: check2) else { return }
+        
+        if imageOneIndex == imageTwoIndex {
+            let alertController = UIAlertController(title: "CAUTION", message: "You have selcted the same initial image", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Return to selection", style: .cancel) { (_) in
+                self.navigationController?.popViewController(animated: true)
+            }
+            alertController.addAction(alertAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        if result == 0 && imageOneIndex != imageTwoIndex {
+            guard let indexPath = imageTwoIndexPath else { return }
+            photoController.photos.remove(at: indexPath.item)
+            photoController.saveToPersistentStore()
+            
+            let alertController = UIAlertController(title: "Duplicate Detected", message: "", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Delete Incoming!", style: .destructive) { (_) in
+                self.navigationController?.popViewController(animated: true)
+            }
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        if result != 0 {
+            let alertController = UIAlertController(title: "No Duplicate Detected", message: "", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Return", style: .cancel) { (_) in
+                self.navigationController?.popViewController(animated: true)
+            }
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }>`
+    
+    This code essentially handles pulling all my resources together, from the photo data to my hammingDistance method and generates a response to the user based on what it finds out. It's where the whole app comes together.
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+`<This app can determine down to a bit to bit level if an image is a duplicate or not. Perfect for photographers or people concerned their images are being used elsewhere without their permission.>`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `<Duplicate Detection>`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`<Perform multiple scans at the same time, backup images before they are deleted to revert if a User wants to do so. And make the process more efficient for scanning hundreds or more images simultaneously.>`
 
 ## Required Slides (Add your Keynote to your PR)
 
