@@ -24,7 +24,7 @@
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+<img width="400" height="700" src="https://github.com/mitchellgbudge/Lambda-Progress/blob/master/HeroImage.jpeg" />
 
 ## Questions (Answer indented below)
 
