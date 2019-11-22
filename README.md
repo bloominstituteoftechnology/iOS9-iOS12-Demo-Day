@@ -24,7 +24,7 @@
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![Hero Image](https://github.com/IOS9BW4/iOS9-iOS12-Demo-Day/blob/master/launchScreen.png)
 
 ## Questions (Answer indented below)
 
