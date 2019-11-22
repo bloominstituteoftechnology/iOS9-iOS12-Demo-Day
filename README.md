@@ -16,41 +16,71 @@
 
 ## Links
 
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
+* Github Code: https://github.com/mitchellgbudge/Lambda-Progress
+* Github Proposal: https://github.com/mitchellgbudge/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/81Qix9b8/lambda-progress-tracker
+* Test Flight Signup (Recommended): https://testflight.apple.com/join/wrVaCkSO
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+<img width="400" height="700" src="https://github.com/mitchellgbudge/Lambda-Progress/blob/master/HeroImage.jpeg" />
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    My favorite feature was recreating a UIControl that created star labels and allowed users to assess their confidence and rating on guided and afternoon projects on the classic Lambda scale of 1-3. It was tricky to take the code I had already sort of written for this project and adjust it to what I needed. This whole process made me realize how important it is to write modular code, beginning with the mindset that I would want to be able to use any chunk of code in another project later. 
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    One difficult aspect was that each individual lesson could have anywhere from 2 to 8 objectives. I needed a way for the user to check off these aspects and have that factor into an overall mastery score. I implemented a custom delegate method to adjust the score for however many times a button in a cell was tapped, and then calculated that out of the total number of objectives. 
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    ```private func calculateMastery() -> Double {
+        guard let module = module else { return 0 }
+        let oMastery = module.objectiveMastery / Double(module.objectives!.count)
+        arithmetic = oMastery + module.confidence + module.rating
+        
+        switch arithmetic {
+        case 4..<5:
+            module.mastery = 90
+        case 3.5..<4:
+            module.mastery = 80
+        case 3..<3.5:
+            module.mastery = 70
+        case 2.5..<3:
+            module.mastery = 60
+        case 2..<2.5:
+            module.mastery = 50
+        default:
+            module.mastery = 100
+        }
+        return module.mastery
+    }
+    
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        guard let module = module else { return }
+        moduleController?.updateModule(module: module, confidence: module.confidence, rating: module.rating, mastery: calculateMastery())
+        self.navigationController?.popToRootViewController(animated: true)
+    }```
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    Lambda students need a way to track their progress in a fluid and intensive course. The Lambda Progress app allows students to check off critical aspects and assignments throughout their day to ensure that they are meeting the standards established by the curriculum. Students can check off progress in lectures, afternoon project, career assignments, and conceptual mastery. 
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    Progress evaluation via a calculating method that takes in scores of students guided project confidence, afternoon project MVP self-rating, and overall objective mastery. After the user has scored their work and understanding, the app displays a percentage level of mastery in the master view.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    - Add functionality for CS track
+    - Make project modular in order to enable UX, Web, and DS students to have the same access and information
+    - Integrate a date-keeping/calendar system for students to track their progress through the entire course
+    - Configure a login criteria and give every user unique access
+    - Establish a notification process to ensure that students are given timely reminders to work through past modules and career assignments
 
 ## Required Slides (Add your Keynote to your PR)
 
